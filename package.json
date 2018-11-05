@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sachin Bhatnagar <mailme@sachinbhatnagar.com> (https://www.sachinbhatnagar.com)",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
