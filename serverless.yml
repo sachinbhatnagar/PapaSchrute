@@ -1,0 +1,17 @@
+service: PapaSchrute
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: production
+  region: us-west-2
+  environment:
+    consumer_api_key: consumer-key
+    consumer_api_secret: consumer-secret
+    access_token: access-token
+    access_token_secret: access-token-secret
+
+functions:
+  papaschrute:
+    handler: handler.papaSchrute
+    events:
+      - schedule: rate(6 hours)
